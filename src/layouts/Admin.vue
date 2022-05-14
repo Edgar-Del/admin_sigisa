@@ -19,12 +19,8 @@
     <va-breadcrumbs slot="header"></va-breadcrumbs>
     <va-aside slot="aside"></va-aside>
     <va-footer slot="footer" :menu="footerMenu">
-      &copy; 2020,
-      <v-icon size="18"> mdi-xml </v-icon>
-      with
-      <v-icon size="18"> mdi-heart </v-icon>
-      by
-      <a href="https://www.company.com">My Awesome Company</a> for a better web.
+      &copy; 2022,
+      <a href="https://www.company.com">@tec_interativa</a>
     </va-footer>
   </va-layout>
 </template>
@@ -47,7 +43,7 @@ export default {
       footerMenu: [
         {
           href: "#",
-          text: "About Us",
+          text: "Sobre Nós",
         },
         {
           href: "#",
@@ -55,7 +51,7 @@ export default {
         },
         {
           href: "#",
-          text: "License",
+          text: "Licença",
         },
       ],
       profileMenu: [

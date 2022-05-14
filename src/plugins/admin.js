@@ -4,7 +4,7 @@ import VuetifyAdmin from "vuetify-admin";
 import "vuetify-admin/src/loader";
 
 import {
-  jsonServerDataProvider,
+  laravelDataProvider,
   fakeAuthProvider,
 } from "vuetify-admin/src/providers";
 import { en } from "vuetify-admin/src/locales";
@@ -24,10 +24,11 @@ Vue.use(VuetifyAdmin);
 /**
  * Axios instance
  */
-const baseURL = process.env.VUE_APP_API_URL || "http://localhost:3000";
+const baseURL = process.env.VUE_APP_API_URL || "http://localhost:8000";
 
 const http = axios.create({
   baseURL,
+  withCredentials: false,
   headers: { "X-Requested-With": "XMLHttpRequest" },
 });
 
@@ -38,14 +39,14 @@ export default new VuetifyAdmin({
   router,
   store,
   i18n,
-  title: "Vuetify Admin",
+  title: "SIGISA ISPB",
   routes,
   locales: {
     en,
   },
   translations: ["en"],
-  dataProvider: jsonServerDataProvider(http),
-  authProvider: fakeAuthProvider(),
+  dataProvider: laravelDataProvider(http),
+  authProvider: fakeAuthProvider(http),
   resources,
   http,
   options: {

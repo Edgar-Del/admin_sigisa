@@ -4,58 +4,66 @@
     "fr": "French"
   },
   "routes": {
-    "home": "Home",
+    "home": "Início",
     "login": "Login",
-    "forgot_password": "Forgot password",
-    "reset_password": "Reset password",
-    "register": "Register",
-    "profile": "Profile",
-    "dashboard": "Dashboard",
-    "not_found": "Not found"
+    "forgot_password": "Esqueci a senha",
+    "reset_password": "Repor a Senha",
+    "register": "Registar",
+    "profile": "Perfil",
+    "dashboard": "Menu Inicial",
+    "not_found": "Não Encontrado"
   },
   "auth": {
-    "username": "Username",
-    "password": "Password",
-    "remember": "Remember",
-    "sign_in": "Sign in",
-    "forgot_password": "Forgot password ?",
-    "send": "Send",
-    "password_confirmation": "Password confirmation",
-    "reset": "Reset",
-    "name": "Account name",
+    "username": "E-mail",
+    "password": "Senha",
+    "remember": "Lembrar-me",
+    "sign_in": "Iniciar Sessão",
+    "forgot_password": "Esqueceu a Senha?",
+    "send": "Enviar",
+    "password_confirmation": "Confirmação de Senha",
+    "reset": "Repor",
+    "name": "Nome ",
     "email": "Email",
-    "register": "Register"
+    "register": "Registar"
   },
   "profile": {
-    "account": "Account",
-    "password": "Password",
-    "name": "Name",
+    "account": "Conta",
+    "password": "Senha",
+    "name": "Nome",
     "email": "Email",
-    "current_password": "Current password",
-    "password_confirmation": "Password confirmation",
-    "update": "Update",
-    "account_updated": "Account updated",
-    "password_changed": "Password changed"
+    "current_password": "Senha Actual",
+    "password_confirmation": "Confirmar Senha",
+    "update": "Actualizar",
+    "account_updated": "Conta Atualizada!",
+    "password_changed": "Senha Alterada!"
   },
   "users": {
     "impersonate": "Impersonate",
     "stop_impersonate": "Stop impersonate",
-    "logged_as": "You are actually logged as {0}, click {1} link in order to stop impersonate mode."
+    "logged_as": "Estás Logado como {0}, click {1} link in order to stop impersonate mode."
   },
   "menu": {
     "login": "Login",
-    "profile": "Profile",
-    "dashboard": "Dashboard"
+    "profile": "Perfil",
+    "dashboard": "Painel Inicial"
   },
   "resources": {
     "users": {
-      "name": "User | Users",
+      "name": "Usuário | Usuários",
       "fields": {
-        "name": "Name",
+        "name": "Nome",
         "email": "Email",
-        "password": "Password",
-        "password_confirmation": "Password confirmation"
+        "password": "Senha",
+        "password_confirmation": "Confirmar Senha"
       }
+    },
+    "books": {
+      "fields": {},
+      "enums": {}
+    },
+    "cursos": {
+      "fields": {},
+      "enums": {}
     }
   }
 }
