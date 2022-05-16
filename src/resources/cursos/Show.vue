@@ -5,8 +5,8 @@
         <v-col sm="6">
           <base-material-card>
             <template v-slot:heading>
-              <div class="display-2">
-                {{ title }}algo errado
+             <div class="display-2">
+                {{ title }}
               </div>
             </template>
             <v-card-text>
