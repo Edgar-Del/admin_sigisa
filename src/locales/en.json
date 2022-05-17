@@ -68,6 +68,18 @@
     "ano_letivos": {
       "fields": {},
       "enums": {}
+    },
+    "ano_academicos": {
+      "fields": {},
+      "enums": {}
+    },
+    "semestres": {
+      "fields": {},
+      "enums": {}
+    },
+    "turmas": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

@@ -8,9 +8,11 @@
               {{ title }}
             </div>
           </template>
-           <v-card-text>
-              <va-text-input source="ano_letivo"></va-text-input>
-             <va-text-input source="estado"></va-text-input>
+          <v-card-text>
+            <va-text-input source="semestre"></va-text-input>
+            <va-date-input source="data_inicio" format="short"></va-date-input>
+            <va-date-input source="data_fim" format="short"></va-date-input>
+            <va-text-input source="ano_letivo"></va-text-input>
           </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>

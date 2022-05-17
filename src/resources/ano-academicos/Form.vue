@@ -8,10 +8,12 @@
               {{ title }}
             </div>
           </template>
-           <v-card-text>
-              <va-text-input source="ano_letivo"></va-text-input>
-             <va-text-input source="estado"></va-text-input>
-          </v-card-text>
+          <v-card-text>
+            <va-text-input source="ano_academico"></va-text-input>
+            <va-text-input source="curso"></va-text-input>
+            <va-text-input source="grau"></va-text-input>
+            <va-text-input source="ano_letivo"></va-text-input>
+         </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>
       </v-col>

@@ -9,9 +9,11 @@
                 {{ title }}
               </div>
             </template>
-             <v-card-text>
-             <va-field source="ano_letivo"></va-field>
-              <va-field source="estado"></va-field>
+            <v-card-text>
+              <va-field source="ano_academico"></va-field>
+              <va-field source="curso"></va-field>
+              <va-field source="grau"></va-field>
+              <va-field source="ano_letivo"></va-field>
             </v-card-text>
           </base-material-card>
         </v-col>
