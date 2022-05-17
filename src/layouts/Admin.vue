@@ -19,8 +19,7 @@
     <va-breadcrumbs slot="header"></va-breadcrumbs>
     <va-aside slot="aside"></va-aside>
     <va-footer slot="footer" :menu="footerMenu">
-      &copy; 2022,
-      <a href="https://www.company.com">@tec_interativa</a>
+      @tec_interativa  &copy; 2022
     </va-footer>
   </va-layout>
 </template>

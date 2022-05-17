@@ -7,6 +7,6 @@ export default (i18n, admin) => [
     link: "/",
   },
   { divider: true },
-  admin.getResourceLink("users"),admin.getResourceLink("books"),
+  admin.getResourceLink("users"),admin.getResourceLink("books"),admin.getResourceLink("ano_letivos"),
   admin.getResourceLink("cursos"),
 ];

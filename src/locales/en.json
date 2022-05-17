@@ -64,6 +64,10 @@
     "cursos": {
       "fields": {},
       "enums": {}
+    },
+    "ano_letivos": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

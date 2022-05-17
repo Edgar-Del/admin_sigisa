@@ -5,14 +5,11 @@
         <v-col sm="6">
           <base-material-card>
             <template v-slot:heading>
-             <div class="display-2">
+              <div class="display-2">
                 {{ title }}
               </div>
             </template>
             <v-card-text>
-              <va-field source="nome_curso"></va-field>
-              <va-field source="grau"></va-field>
-              <va-field source="departamento_id"></va-field>
             </v-card-text>
           </base-material-card>
         </v-col>
