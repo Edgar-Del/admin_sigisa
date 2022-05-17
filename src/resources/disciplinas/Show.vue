@@ -9,10 +9,11 @@
                 {{ title }}
               </div>
             </template>
-            <v-card-text>
-            <va-field source="turma"></va-field>
-            <va-field source="semestre_id"></va-field>
-            <va-field source="ano_academico"></va-field>
+           <v-card-text>
+             <va-field source="nome_disciplina"></va-field>
+             <va-field source="tipo_disciplina"></va-field>
+             <va-field source="curso"></va-field>
+             <va-field source="semestre"></va-field>
             </v-card-text>
           </base-material-card>
         </v-col>

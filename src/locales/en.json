@@ -80,6 +80,14 @@
     "turmas": {
       "fields": {},
       "enums": {}
+    },
+    "disciplinas": {
+      "fields": {},
+      "enums": {}
+    },
+    "docentes": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

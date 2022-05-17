@@ -10,9 +10,13 @@
               </div>
             </template>
             <v-card-text>
-            <va-field source="turma"></va-field>
-            <va-field source="semestre_id"></va-field>
-            <va-field source="ano_academico"></va-field>
+              <va-text-field source="nome_completo"></va-text-field >
+              <va-text-field  source="num_identificacao"></va-text-field >
+              <va-text-field  source="morada"></va-text-field >
+              <va-text-field  source="telefone"></va-text-field >
+              <va-text-field  source="email"></va-text-field >
+              <va-text-field  source="sexo"></va-text-field >
+              <va-text-field  source="estado_civil"></va-text-field >
             </v-card-text>
           </base-material-card>
         </v-col>

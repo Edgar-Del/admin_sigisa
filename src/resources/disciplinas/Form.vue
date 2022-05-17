@@ -9,10 +9,11 @@
             </div>
           </template>
           <v-card-text>
-            <va-text-input source="turma"></va-text-input>
-            <va-text-input source="semestre_id"></va-text-input>
-            <va-text-input source="ano_academico"></va-text-input>
-         </v-card-text>
+            <va-text-input source="nome_disciplina"></va-text-input>
+            <va-text-input source="tipo_disciplina"></va-text-input>
+            <va-text-input source="curso"></va-text-input>
+            <va-text-input source="semestre"></va-text-input>
+          </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>
       </v-col>

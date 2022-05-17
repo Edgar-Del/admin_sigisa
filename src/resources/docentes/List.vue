@@ -16,9 +16,11 @@ export default {
     return {
       filters: [],
       fields: [
-        {source:'turma',sortable:true},
-        {source:'semestre_id'},
-        {source:'ano_academico'},
+        {source:'nome_completo', sortable:true},
+        {source:'num_identificacao', sortable:true},
+        {source:'morada'},
+        {source:'telefone'},
+        {source:'email'},
 
       ],
     };

@@ -5,5 +5,7 @@ export default [
   { name: 'ano_letivos' },
   { name: 'ano_academicos' },
   { name: 'semestres' },
-  { name: 'turmas' }
+  { name: 'turmas' },
+  { name: 'disciplinas' },
+  { name: 'docentes' }
 ]
