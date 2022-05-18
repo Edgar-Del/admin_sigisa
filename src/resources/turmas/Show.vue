@@ -10,7 +10,7 @@
               </div>
             </template>
             <v-card-text>
-            <va-field source="turma"></va-field>
+            <va-field source="nome_turma"></va-field>
             <va-field source="semestre_id"></va-field>
             <va-field source="ano_academico"></va-field>
             </v-card-text>

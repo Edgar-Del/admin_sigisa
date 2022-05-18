@@ -9,7 +9,7 @@
             </div>
           </template>
           <v-card-text>
-            <va-text-input source="turma"></va-text-input>
+            <va-text-input source="nome_turma"></va-text-input>
             <va-text-input source="semestre_id"></va-text-input>
             <va-text-input source="ano_academico"></va-text-input>
          </v-card-text>

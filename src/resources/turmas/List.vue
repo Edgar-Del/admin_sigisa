@@ -16,8 +16,8 @@ export default {
     return {
       filters: [],
       fields: [
-        {source:'turma',sortable:true},
-        {source:'semestre_id'},
+        {source:'nome_turma',sortable:true},
+        {source:'semestre'},
         {source:'ano_academico'},
 
       ],

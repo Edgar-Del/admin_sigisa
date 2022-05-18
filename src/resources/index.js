@@ -7,5 +7,4 @@ export default [
   { name: 'semestres' },
   { name: 'turmas' },
   { name: 'disciplinas' },
-  { name: 'docentes' }
 ]
