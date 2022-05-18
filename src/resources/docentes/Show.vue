@@ -16,7 +16,7 @@
               <va-text-field  source="telefone"></va-text-field >
               <va-text-field  source="email"></va-text-field >
               <va-text-field  source="sexo"></va-text-field >
-              <va-text-field  source="estado_civil"></va-text-field >
+             <va-text-field  source="estado_civil"></va-text-field >
             </v-card-text>
           </base-material-card>
         </v-col>
