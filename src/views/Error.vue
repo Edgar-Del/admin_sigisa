@@ -3,7 +3,7 @@
     <div class="text-center">
       <img
         src="../assets/logo.svg"
-        alt="Vuetify Admin"
+        alt="SIGISA ISPB"
         width="300"
         height="300"
       />
