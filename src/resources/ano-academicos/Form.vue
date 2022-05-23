@@ -9,10 +9,28 @@
             </div>
           </template>
           <v-card-text>
+        
             <va-text-input source="ano_academico"></va-text-input>
-            <va-text-input source="curso"></va-text-input>
-            <va-text-input source="grau"></va-text-input>
-            <va-text-input source="ano_letivo"></va-text-input>
+         <!--   <va-text-input source="curso"></va-text-input> -->
+           <va-select-input
+               model="curso"
+               source="cursos.nome_curso"
+               reference="cursos"
+               :filter="{active: true}"
+             ></va-select-input>
+           <va-select-input
+               source="nome_disciplina"
+               model="grau"
+               reference="disciplinas"
+               :filter="{ active: true }"
+             ></va-select-input>
+           <va-select-input
+               model="ano_letivo"
+               reference="ano_letivos"
+               source="ano_letivo"
+               :filter="{ active: true }"
+            ></va-select-input>
+             
          </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>
