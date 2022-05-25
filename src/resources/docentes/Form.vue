@@ -9,7 +9,7 @@
             </div>
           </template>
           <v-card-text>
-             <va-text-input source="nome_completo"></va-text-input>
+            <va-text-input source="nome_completo"></va-text-input>
              <va-text-input source="num_identificacao"></va-text-input>
              
               <va-select-input
