@@ -22,6 +22,6 @@ export default (i18n, admin) => [
   //admin.getResourceLink("periodo"),
  // admin.getResourceLink("departamento"),
  // admin.getResourceLink("unidade"),
- // admin.getResourceLink("situacao_laboral"),
+ // admin.getResourceLink("situacao_laboral"),admin.getResourceLink("estudantes"),
   admin.getResourceLink("disciplina_docentes"),
 ];

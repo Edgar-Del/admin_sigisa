@@ -116,6 +116,10 @@
     "situacao_laboral": {
       "fields": {},
       "enums": {}
+    },
+    "estudantes": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

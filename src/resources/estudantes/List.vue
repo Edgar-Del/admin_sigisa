@@ -1,14 +1,9 @@
 <template>
-
-  
   <base-material-card :icon="resource.icon" :title="title">
     <va-list
       :filters="filters"
     >
-      <va-data-table 
-      :fields="fields"
-      row-create
-      row-edit>
+      <va-data-table :fields="fields">
       </va-data-table>
     </va-list>
   </base-material-card>
@@ -20,11 +15,7 @@ export default {
   data() {
     return {
       filters: [],
-     fields: [{source:'semestre',sortable:true},
-      {source:'data_inicio',sortable:true},
-      {source:'data_fim',sortable:true},
-      {source:'ano_letivo'},
-      ],
+      fields: [],
     };
   },
 };
