@@ -10,7 +10,7 @@
               </div>
             </template>
             <v-card-text>
-              <va-text-field source="nome_completo"></va-text-field>
+             <va-text-field source="nome_completo"></va-text-field>
              <va-text-field source="num_identificacao"></va-text-field>
              <va-text-field source="grau_academico"></va-text-field>
              <va-text-field source="morada"></va-text-field>

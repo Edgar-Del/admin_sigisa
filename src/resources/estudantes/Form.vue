@@ -11,11 +11,12 @@
          <v-card-text>
             <va-text-input source="nome_completo"></va-text-input>
             <va-text-input source="num_identificacao"></va-text-input>
+            <va-text-input source="naturalidade"></va-text-input>
             <va-text-input source="morada"></va-text-input>
              <va-text-input source="telefone"></va-text-input>
              <va-text-input source="email"></va-text-input>
              <va-date-input source="data_nascimento"></va-date-input>
-             <va-text-input source="sexo"></va-text-input>
+              <va-select-field source="sexo" chip :choices="choices"></va-select-field>
              <va-select-input
                :source="'estado_civil'"
                model="estado_civil"
@@ -50,5 +51,14 @@
 <script>
 export default {
   props: ["id", "title", "item"],
+  data() {
+    return {
+      choices: [
+        { value: 'M', text: 'Masculino' },
+        { value: 'F', text: 'Feminino' }
+      ]
+    }
+  }
+
 };
 </script>

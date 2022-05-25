@@ -120,6 +120,10 @@
     "estudantes": {
       "fields": {},
       "enums": {}
+    },
+    "matriculas": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

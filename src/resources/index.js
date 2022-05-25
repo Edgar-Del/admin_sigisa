@@ -35,20 +35,13 @@ export default [
     icon: 'mdi-account-details',
     label: 'nome_completo'
   },
-  { name: 'graus',
-  label: 'grau' },
+  { name: 'graus', label: 'grau' },
   { name: 'grau_academicos', label: 'grau_academico' },
   { name: 'estado_civil', label: 'estado_civil' },
   { name: 'periodo', label: 'nome_periodo' },
   { name: 'departamento', label: 'nome_departamento' },
-  { 
-    name: 'unidade', 
-    label: 'nome_unidade' 
-  },
-  { name: 'situacao_laboral', 
-  label: 'situacao_laboral' },
-  { 
-    name: 'estudantes',
-    label:'nome_completo',
-}
+  { name: 'unidade', label: 'nome_unidade' },
+  { name: 'situacao_laboral', label: 'situacao_laboral' },
+  { name: 'estudantes', label: 'nome_completo' },
+  { name: 'matriculas' }
 ]
