@@ -88,6 +88,34 @@
     "docentes": {
       "fields": {},
       "enums": {}
+    },
+    "graus": {
+      "fields": {},
+      "enums": {}
+    },
+    "grau_academicos": {
+      "fields": {},
+      "enums": {}
+    },
+    "estado_civil": {
+      "fields": {},
+      "enums": {}
+    },
+    "periodo": {
+      "fields": {},
+      "enums": {}
+    },
+    "departamento": {
+      "fields": {},
+      "enums": {}
+    },
+    "unidade": {
+      "fields": {},
+      "enums": {}
+    },
+    "situacao_laboral": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

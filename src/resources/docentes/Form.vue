@@ -1,7 +1,7 @@
 <template>
   <va-form :id="id" :item="item">
     <v-row justify="center">
-      <v-col sm="6">
+      <v-col sm="10">
         <base-material-card>
           <template v-slot:heading>
             <div class="display-2">
@@ -11,13 +11,29 @@
           <v-card-text>
              <va-text-input source="nome_completo"></va-text-input>
              <va-text-input source="num_identificacao"></va-text-input>
-             <va-text-input source="grau_academico"></va-text-input>
-             <va-text-input source="morada"></va-text-input>
+             
+              <va-select-input
+               :source="'grau_academico'"
+               model="grau_academico"
+               reference="grau_academicos"
+               :filter="{ active: true }"
+             ></va-select-input>
+            <va-text-input source="morada"></va-text-input>
              <va-text-input source="telefone"></va-text-input>
              <va-text-input source="email"></va-text-input>
              <va-text-input source="sexo"></va-text-input>
-             <va-text-input source="estado_civil"></va-text-input>
-             <va-text-input source="user_id"></va-text-input>
+             <va-select-input
+               :source="'estado_civil'"
+               model="estado_civil"
+               reference="estado_civil"
+               :filter="{ active: true }"
+             ></va-select-input>
+             <va-select-input
+               :source="'name'"
+               model="user_id"
+               reference="users"
+               :filter="{ active: true }"
+             ></va-select-input>
           </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>

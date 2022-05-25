@@ -10,8 +10,18 @@
           </template>
           <v-card-text>
             <va-text-input source="nome_turma"></va-text-input>
-            <va-text-input source="semestre_id"></va-text-input>
-            <va-text-input source="ano_academico"></va-text-input>
+             <va-select-input
+               :source="'semestre'"
+               model="semestre_id"
+               reference="semestres"
+               :filter="{ active: true }"
+             ></va-select-input>
+             <va-select-input
+               :source="'ano_academico'"
+               model="ano_academico"
+               reference="ano_academicos"
+               :filter="{ active: true }"
+             ></va-select-input>
          </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>

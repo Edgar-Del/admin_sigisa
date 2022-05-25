@@ -10,8 +10,11 @@
           </template>
           <v-card-text>
              <va-text-input source="nome_curso"></va-text-input>
-             <va-text-input source="grau"></va-text-input>
-             <va-text-input source="departamento_id"></va-text-input>
+             <va-select-input
+              source="nome_departamento"
+               model="departamento_id"
+               reference="departamento"
+            ></va-select-input>
              <va-select-input
               source="grau"
                reference="graus"

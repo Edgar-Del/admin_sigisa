@@ -14,12 +14,8 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
-      filters: ["nome_curso"],
-      fields: [
-        {source:'nome_curso',sortable: true},
-        {source:'grau'},
-        {source:'departamento'},
-      ],
+      filters: [],
+      fields: [],
     };
   },
 };

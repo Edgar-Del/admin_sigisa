@@ -9,15 +9,6 @@
             </div>
           </template>
           <v-card-text>
-            <va-text-input source="semestre"></va-text-input>
-            <va-date-input source="data_inicio" format="short"></va-date-input>
-            <va-date-input source="data_fim" format="short"></va-date-input>
-            <va-select-input
-               :source="'ano_letivo'"
-               model="ano_letivo"
-               reference="ano_letivos"
-               :filter="{ active: true }"
-             ></va-select-input>
           </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>

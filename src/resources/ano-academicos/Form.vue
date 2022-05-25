@@ -12,18 +12,19 @@
         
             <va-text-input source="ano_academico"></va-text-input>
          <!--   <va-text-input source="curso"></va-text-input> -->
-           <va-select-input
+       <va-select-input
+               :source="'nome_curso'"
                model="curso"
-               source="cursos.nome_curso"
                reference="cursos"
-               :filter="{active: true}"
-             ></va-select-input>
-           <va-select-input
-               source="nome_disciplina"
-               model="grau"
-               reference="disciplinas"
                :filter="{ active: true }"
              ></va-select-input>
+          <va-select-input
+               :source="'grau'"
+               model="grau"
+               reference="graus"
+               :filter="{ active: true }"
+             ></va-select-input>
+         
            <va-select-input
                model="ano_letivo"
                reference="ano_letivos"
@@ -40,7 +41,12 @@
 </template>
 
 <script>
+
 export default {
+ 
   props: ["id", "title", "item"],
+
 };
+
+
 </script>
