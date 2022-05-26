@@ -9,25 +9,23 @@
             </div>
           </template>
          <v-card-text>
-            <v-row justify="center">
-              <v-col sm="8">
-              <va-select-input
-               :source="'nome_completo'"
-               model="estudante_id"
-              reference="estudantes"
-               :filter="{ active: true }"
-             ></va-select-input>
-              </v-col>
-             </v-row>
             <v-row>
            <v-col sm="2">
              <va-text-input source="nota"></va-text-input>
            </v-col>
-            <v-col sm="10">
+            <v-col sm="4">
                <va-select-input
                :source="'prova'"
                model="prova_id"
               reference="provas"
+               :filter="{ active: true }"
+             ></va-select-input>
+             </v-col>
+             <v-col sm="6">
+                <va-select-input
+               :source="'estudante_id'"
+               model="estudante_id"
+              reference="estudantes"
                :filter="{ active: true }"
              ></va-select-input>
              </v-col>
