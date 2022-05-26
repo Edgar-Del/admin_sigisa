@@ -9,20 +9,20 @@
             </div>
           </template>
          <v-card-text>
-        <v-row>
+            <v-row>
            <v-col sm="6">
         <va-select-input
-               :source="'nome_completo'"
-               model="estudante_id"
-               reference="estudantes"
+               :source="'estudante'"
+               model="matricula_id"
+               reference="matriculas"
                :filter="{ active: true }"
              ></va-select-input>
            </v-col>
             <v-col sm="6">
             <va-select-input
-               :source="'nome_unidade'"
-               model="unidade_id"
-               reference="unidade"
+               :source="'semestre'"
+               model="semestre_id"
+               reference="semestres"
                :filter="{ active: true }"
              ></va-select-input>
              </v-col>
@@ -30,24 +30,24 @@
          <v-row>
            <v-col sm="6">
          <va-select-input
-               :source="'nome_curso'"
-               model="curso_id"
-               reference="cursos"
+               :source="'ano_academico'"
+               model="ano_academico"
+               reference="ano_academicos"
                :filter="{ active: true }"
              ></va-select-input>
               </v-col>
             <v-col sm="6">
            <va-select-input
-               :source="'nome_periodo'"
-               model="periodo"
-               reference="periodo"
+               :source="'turma'"
+               model="turma"
+               reference="turmas"
                :filter="{ active: true }"
              ></va-select-input>
              </v-col>
              </v-row>
          <v-row>
            <v-col sm="6">
-              <va-date-input source="data_matricula"></va-date-input>
+              <va-date-input source="data_confirmacao"></va-date-input>
               </v-col>
              </v-row>
           </v-card-text>

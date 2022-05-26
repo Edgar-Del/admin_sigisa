@@ -16,11 +16,12 @@ export default {
     return {
       filters: [],
       fields: [
-        {source:'nome_disciplina',sortable:true},
-        {source:'tipo_disciplina',sortable:true},
-        {source:'curso'},
-        {source:'semestre'},
-
+        {source:'matricula.estudante',sortable:true},
+        {source:'matricula.curso',sortable:true},
+        {source:'matricula.periodo',sortable:true},
+        {source:'semestre',},
+        {source:'ano_academico',sortable:true},
+        {source:'turma',sortable:true},
       ],
     };
   },

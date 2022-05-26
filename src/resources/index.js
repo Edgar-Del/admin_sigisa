@@ -24,7 +24,7 @@ export default [
     label: 'semestre',
     actions: [ 'edit', 'list', 'delete' ]
   },
-  { name: 'turmas', icon: 'mdi-google-classroom', label: 'nome_turma' },
+  { name: 'turmas', icon: 'mdi-google-classroom', label: 'turma' },
   {
     name: 'disciplinas',
     icon: 'mdi-book-open-page-variant-outline',
@@ -38,10 +38,20 @@ export default [
   { name: 'graus', label: 'grau' },
   { name: 'grau_academicos', label: 'grau_academico' },
   { name: 'estado_civil', label: 'estado_civil' },
-  { name: 'periodo', label: 'nome_periodo' },
+  { name: 'periodo', label: 'periodo' },
   { name: 'departamento', label: 'nome_departamento' },
   { name: 'unidade', label: 'nome_unidade' },
   { name: 'situacao_laboral', label: 'situacao_laboral' },
-  { name: 'estudantes', label: 'nome_completo' },
-  { name: 'matriculas' }
+  {
+    name: 'estudantes',
+    icon: 'mdi-account-school',
+    label: 'nome_completo'
+  },
+  {
+    name: 'matriculas',
+    icon: 'mdi-account-box-multiple',
+    label: 'estudante'
+  },
+  { name: 'confirmacao_matriculas' },
+  { name: 'provas' }
 ]

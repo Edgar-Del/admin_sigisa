@@ -3,7 +3,7 @@
     <va-list
       :filters="filters"
     >
-      <va-data-table disable-clone :fields="fields">
+      <va-data-table :fields="fields">
       </va-data-table>
     </va-list>
   </base-material-card>
@@ -15,13 +15,7 @@ export default {
   data() {
     return {
       filters: [],
-      fields: [
-        {source:'nome_disciplina',sortable:true},
-        {source:'tipo_disciplina',sortable:true},
-        {source:'curso'},
-        {source:'semestre'},
-
-      ],
+      fields: [],
     };
   },
 };

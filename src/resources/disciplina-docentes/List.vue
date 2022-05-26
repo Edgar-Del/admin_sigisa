@@ -1,9 +1,25 @@
 <template>
   <base-material-card :icon="resource.icon" :title="title">
     <va-list
+
+      resource="disciplinas"
+        disable-global-search
+        disable-pagination
+        disable-query-string
+        disable-create
+        disable-export
+        :association="association"
+        
       :filters="filters"
     >
-      <va-data-table :fields="fields">
+      <va-data-table 
+          resource="docentes"
+          disable-sort
+          disable-select
+          disable-clone
+          disable-delete
+          :association="association"
+      :fields="fields">
       </va-data-table>
     </va-list>
   </base-material-card>
@@ -15,12 +31,18 @@ export default {
   data() {
     return {
       filters: [],
-      fields: [{source:'ano_academico',sortable:true},
-      {source:'curso'},
-      {source:'grau'},
-      {source:'ano_letivo'},
-      
+      fields: [
+       {source:'nome_disciplina',sortable:true},
+        {source:'tipo_disciplina',sortable:true},
+        {source:'curso'},
+        {source:'semestre'},
       ],
+      association: {
+        resource: "disciplinas",
+        source: "id",
+        id: this.id,
+       
+      },
     };
   },
 };

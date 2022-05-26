@@ -124,6 +124,14 @@
     "matriculas": {
       "fields": {},
       "enums": {}
+    },
+    "confirmacao_matriculas": {
+      "fields": {},
+      "enums": {}
+    },
+    "provas": {
+      "fields": {},
+      "enums": {}
     }
   }
 }
