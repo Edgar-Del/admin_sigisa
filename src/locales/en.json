@@ -132,6 +132,10 @@
     "provas": {
       "fields": {},
       "enums": {}
+    },
+    "notas": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

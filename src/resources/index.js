@@ -53,5 +53,9 @@ export default [
     label: 'estudante'
   },
   { name: 'confirmacao_matriculas' },
-  { name: 'provas' }
+  {
+    name: 'provas',
+    label:'prova'
+},
+  { name: 'notas' }
 ]
