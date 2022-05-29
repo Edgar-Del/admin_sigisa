@@ -18,8 +18,15 @@
              ></va-select-input>
              <va-select-input
                :source="'ano_academico'"
-               model="ano_academico"
+               model="ano_academico_id"
                reference="ano_academicos"
+               :filter="{ active: true }"
+             ></va-select-input>
+             <va-select-input
+             label = "Periodo"
+               :source="'nome_periodo'"
+               model="periodo_id"
+               reference="periodos"
                :filter="{ active: true }"
              ></va-select-input>
          </v-card-text>

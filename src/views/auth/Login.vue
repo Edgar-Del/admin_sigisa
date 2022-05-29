@@ -1,10 +1,6 @@
 <template>
   <v-form ref="form" @submit.prevent="validate">
-    <div class="text-right text-body-2">
-      <router-link :to="{ name: 'register' }">
-        {{ $t("auth.register") }} &gt;
-      </router-link>
-    </div>
+  
 
     <v-text-field
       :label="$t('auth.username')"
@@ -14,11 +10,7 @@
       :error-messages="errorMessages.email"
     ></v-text-field>
 
-    <div class="text-right text-body-2">
-      <router-link :to="{ name: 'forgot_password' }">
-        {{ $t("auth.forgot_password") }} &gt;
-      </router-link>
-    </div>
+   
 
     <v-text-field
       :label="$t('auth.password')"

@@ -16,12 +16,12 @@ export default {
     return {
       filters: [],
       fields: [
-        {source:'nome_completo',sortable:true},
-        {source:'num_identificacao',sortable:true},
-        {source:'morada',sortable:true},
-        {source:'telefone',sortable:true},
-        {source:'email',sortable:true},
-        {source:'grau_academico',sortable:true},
+        {label:'NOME COMPLETO',source:'nome_completo',sortable:true},
+        {label:'NÚM IDENTIFICAÇÃO',source:'num_identificacao',sortable:true},
+        {label:'MORADA',source:'morada',sortable:true},
+        {label:'TELEFONE',source:'telefone',sortable:true},
+        {label:'EMAIL',source:'email',sortable:true},
+        {label:'GRAU ACADÉMICO',source:'grau_academico.grau_academico',sortable:true},
       ],
     };
   },

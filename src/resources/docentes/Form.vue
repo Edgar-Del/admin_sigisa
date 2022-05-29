@@ -13,8 +13,9 @@
              <va-text-input source="num_identificacao"></va-text-input>
              
               <va-select-input
-               :source="'grau_academico'"
-               model="grau_academico"
+              label="Grau Académico"
+              :source="'grau_academico'"
+               model="grau_academico_id"
                reference="grau_academicos"
                :filter="{ active: true }"
              ></va-select-input>
@@ -24,7 +25,7 @@
              <va-text-input source="sexo"></va-text-input>
              <va-select-input
                :source="'estado_civil'"
-               model="estado_civil"
+               model="estado_civil_id"
                reference="estado_civil"
                :filter="{ active: true }"
              ></va-select-input>

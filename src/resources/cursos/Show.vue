@@ -10,9 +10,9 @@
               </div>
             </template>
             <v-card-text>
-              <va-field source="nome_curso"></va-field>
-              <va-field source="grau"></va-field>
-              <va-field source="departamento_id"></va-field>
+              <va-field label= 'CURSO' source="nome_curso"></va-field>
+              <va-field label='GRAU' source="grau.grau"></va-field>
+              <va-field label='DEPARTAMENTO' source="departamento.nome_departamento"></va-field>
             </v-card-text>
           </base-material-card>
         </v-col>

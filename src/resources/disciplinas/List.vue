@@ -16,11 +16,11 @@ export default {
     return {
       filters: [],
       fields: [
-        {source:'nome_disciplina',sortable:true},
-        {source:'tipo_disciplina',sortable:true},
-        {source:'curso'},
-        {source:'semestre'},
-
+        {label:'DISCIPLINA',source:'nome_disciplina',sortable:true},
+        {label:'TIPO DISCIPLINA',source:'tipo_disciplina',sortable:true},
+        {label:'CURSO',source:'curso.nome_curso'},
+        {label:'ANO ACADÉMICO',source:'ano_academico.ano_academico'},
+        {label:'SEMESTRE',source:'semestre.semestre'},
       ],
     };
   },

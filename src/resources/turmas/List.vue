@@ -16,10 +16,10 @@ export default {
     return {
       filters: [],
       fields: [
-        {source:'turma',sortable:true},
-        {source:'semestre'},
-        {source:'ano_academico'},
-
+        {lable:'TURMA',source:'turma',sortable:true},
+        {label:'SEMESTRE',source:'semestre.semestre'},
+        {label:'ANO ACADÉMICO',source:'ano_academico.ano_academico'},
+        {label:'PERIODO',source:'periodo.nome_periodo'},
       ],
     };
   },

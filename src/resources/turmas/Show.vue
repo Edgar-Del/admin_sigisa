@@ -11,8 +11,9 @@
             </template>
             <v-card-text>
             <va-field source="nome_turma"></va-field>
-            <va-field source="semestre_id"></va-field>
-            <va-field source="ano_academico"></va-field>
+            <va-field source="semestre.semestre"></va-field>
+            <va-field source="ano_academico.ano_academico"></va-field>
+            <va-field source="periodo.nome_periodo"></va-field>
             </v-card-text>
           </base-material-card>
         </v-col>

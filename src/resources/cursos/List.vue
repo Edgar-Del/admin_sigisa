@@ -1,9 +1,9 @@
 <template>
   <base-material-card :icon="resource.icon" :title="title">
-    <va-list
+    <va-list 
       :filters="filters"
     >
-      <va-data-table :fields="fields">
+      <va-data-table  :fields="fields">
       </va-data-table>
     </va-list>
   </base-material-card>
@@ -14,11 +14,14 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
-      filters: ["nome_curso"],
+      filters: [{
+          label: "curso",
+          source: "nome_curso",
+        },],
       fields: [
-        {source:'nome_curso',sortable: true},
-        {source:'grau'},
-        {source:'departamento'},
+        {label:'CURSO',source:'nome_curso',sortable: true},
+        {label:'NÍVEL',source:'grau.grau'},
+        {label:'DEPARTAMENTO',source:'departamento.nome_departamento'},
       ],
     };
   },
