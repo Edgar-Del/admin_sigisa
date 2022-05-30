@@ -14,10 +14,16 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
-      filters: [{
-          label: "curso",
+      filters: [
+        {
+          label: "CURSO",
           source: "nome_curso",
-        },],
+        },
+        {
+          label: "DEPARTAMENTO",
+          source: "departamento.nome_departamento",
+        },
+        ],
       fields: [
         {label:'CURSO',source:'nome_curso',sortable: true},
         {label:'NÍVEL',source:'grau.grau'},

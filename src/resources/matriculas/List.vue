@@ -16,12 +16,10 @@ export default {
     return {
       filters: [],
       fields: [
-        {source:'id',sortable:true},
-        {source:'estudante',sortable:true},
-        {source:'curso',sortable:true},
-        {source:'unidade'},
-        {source:'periodo'},
-        {source:'data_matricula',sortable:true},
+        {label:'ESTUDANTE',source:'estudante',sortable:true},
+        {label:'CURSO',source:'curso',sortable:true},
+        {label:'PERIODO',source:'periodo'},
+        {label:'DATA DE MATRICULA',source:'data_matricula',sortable:true},
       ],
     };
   },

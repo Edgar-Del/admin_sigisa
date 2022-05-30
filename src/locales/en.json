@@ -136,6 +136,10 @@
     "notas": {
       "fields": {},
       "enums": {}
+    },
+    "atribuicoes": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

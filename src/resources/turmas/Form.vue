@@ -23,12 +23,12 @@
                :filter="{ active: true }"
              ></va-select-input>
              <va-select-input
-             label = "Periodo"
-               :source="'nome_periodo'"
+               :source="'periodo'"
                model="periodo_id"
-               reference="periodos"
+               reference="periodo"
                :filter="{ active: true }"
              ></va-select-input>
+             
          </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>

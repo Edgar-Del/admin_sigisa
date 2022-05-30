@@ -9,27 +9,26 @@
             </div>
           </template>
           <v-card-text>
-            <va-text-input label="Nome da Disciplina" source="nome_disciplina"></va-text-input>
+            <va-text-input label="Disciplina" source="nome_disciplina"></va-text-input>
             <va-text-input label="Tipo de Disciplina" source="tipo_disciplina"></va-text-input>
             <va-text-input label="Carga Horária" source="carga_horaria"></va-text-input>
             <va-select-input
                :source="'nome_curso'"
                model="curso_id"
                reference="cursos"
-               :filter="{ active: true }"
              ></va-select-input>
             <va-select-input
                :source="'semestre'"
                model="semestre_id"
                reference="semestres"
-               :filter="{ active: true }"
+               
              ></va-select-input>
             <va-select-input
               label="Ano Académico"
               :source="'ano_academico'"
                model="ano_academico_id"
                reference="ano_academicos"
-               :filter="{ active: true }"
+               
              ></va-select-input>
           </v-card-text>
           <va-save-button></va-save-button>

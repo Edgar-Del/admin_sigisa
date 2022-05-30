@@ -33,7 +33,6 @@
                :source="'nome_curso'"
                model="curso_id"
                reference="cursos"
-               :filter="{ active: true }"
              ></va-select-input>
               </v-col>
             <v-col sm="6">

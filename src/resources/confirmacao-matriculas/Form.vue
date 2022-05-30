@@ -15,7 +15,6 @@
                :source="'estudante'"
                model="matricula_id"
                reference="matriculas"
-               :filter="{ active: true }"
              ></va-select-input>
            </v-col>
             <v-col sm="6">
@@ -23,7 +22,6 @@
                :source="'semestre'"
                model="semestre_id"
                reference="semestres"
-               :filter="{ active: true }"
              ></va-select-input>
              </v-col>
              </v-row>
@@ -33,7 +31,6 @@
                :source="'ano_academico'"
                model="ano_academico"
                reference="ano_academicos"
-               :filter="{ active: true }"
              ></va-select-input>
               </v-col>
             <v-col sm="6">
@@ -41,7 +38,6 @@
                :source="'turma'"
                model="turma"
                reference="turmas"
-               :filter="{ active: true }"
              ></va-select-input>
              </v-col>
              </v-row>

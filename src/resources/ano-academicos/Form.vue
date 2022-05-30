@@ -16,20 +16,17 @@
                :source="'nome_curso'"
                model="curso"
                reference="cursos"
-               :filter="{ active: true }"
              ></va-select-input>
           <va-select-input
                :source="'grau'"
                model="grau"
                reference="graus"
-               :filter="{ active: true }"
              ></va-select-input>
          
            <va-select-input
                model="ano_letivo"
                reference="ano_letivos"
                source="ano_letivo"
-               :filter="{ active: true }"
             ></va-select-input>
              
          </v-card-text>

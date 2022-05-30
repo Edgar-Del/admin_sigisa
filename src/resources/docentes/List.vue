@@ -20,7 +20,7 @@ export default {
         {label:'NÚM IDENTIFICAÇÃO',source:'num_identificacao',sortable:true},
         {label:'MORADA',source:'morada',sortable:true},
         {label:'TELEFONE',source:'telefone',sortable:true},
-        {label:'EMAIL',source:'email',sortable:true},
+        {label:'EMAIL',source:'email',sortable:true, type:'email'},
         {label:'GRAU ACADÉMICO',source:'grau_academico.grau_academico',sortable:true},
       ],
     };

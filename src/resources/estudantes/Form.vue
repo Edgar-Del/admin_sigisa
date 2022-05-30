@@ -16,19 +16,14 @@
              <va-text-input source="telefone"></va-text-input>
              <va-text-input source="email"></va-text-input>
              <va-date-input source="data_nascimento"></va-date-input>
-              <va-select-field source="sexo" chip :choices="choices"></va-select-field>
+             <va-text-input source="sexo"></va-text-input>
              <va-select-input
                :source="'estado_civil'"
                model="estado_civil"
                reference="estado_civil"
                :filter="{ active: true }"
              ></va-select-input>
-             <va-select-input
-               :source="'name'"
-               model="user_id"
-               reference="users"
-               :filter="{ active: true }"
-             ></va-select-input>
+      
              <va-text-input source="nome_pai"></va-text-input>
              <va-text-input source="nome_mae"></va-text-input>
              <va-text-input source="escola_proveniencia"></va-text-input>

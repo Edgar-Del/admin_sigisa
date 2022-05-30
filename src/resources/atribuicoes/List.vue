@@ -16,10 +16,11 @@ export default {
     return {
       filters: [],
       fields: [
-        {label:'TURMA',source:'turma',sortable:true},
-        {label:'SEMESTRE',source:'semestre.semestre'},
-        {label:'ANO ACADÉMICO',source:'ano_academico.ano_academico'},
-        {label:'PERIODO',source:'periodo.nome_periodo'},
+        {label:'DISCIPLINA',source:'disciplina.nome_disciplina',sortable:true},
+        {label:'DOCENTE',source:'docente.nome_completo',sortable:true},
+        {label:'CURSO',source:'curso.nome_curso',sortable:true},
+        {label:'TURMA',source:'turma.nome_turma',sortable:true},
+
       ],
     };
   },
