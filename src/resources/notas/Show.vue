@@ -2,7 +2,7 @@
   <va-show-layout>
     <va-show :item="item">
       <v-row justify="center">
-        <v-col sm="6">
+        <v-col sm="12">
           <base-material-card>
             <template v-slot:heading>
               <div class="display-2">
@@ -10,6 +10,8 @@
               </div>
             </template>
             <v-card-text>
+              <va-field label="NOME" source="atribuicao.disciplina.nome_disciplina"></va-field>
+              <va-field label="NOME" source="matricula"></va-field>
             </v-card-text>
           </base-material-card>
         </v-col>

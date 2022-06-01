@@ -2,16 +2,17 @@
   <va-form :id="id" :item="item">
     <v-row justify="center">
           <v-card-text>
-             <va-text-input source="nome_curso"></va-text-input>
+             <va-text-input label="Curso" source="nome_curso"></va-text-input>
              <va-select-input
              label="Departamento"
-              source="nome_departamento"
+              source="departamento"
                model="departamento_id"
                reference="departamento"
             ></va-select-input>
              <va-select-input
-             label="Grau"
-              source="grau_id"
+             
+              model="grau_id"
+              source="grau"
                reference="graus"
             ></va-select-input>
             <!--

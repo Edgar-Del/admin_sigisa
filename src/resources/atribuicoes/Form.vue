@@ -4,26 +4,26 @@
          <v-card-text>
             <va-select-input
               label="Disciplina"
-               :source="'nome_disciplina'"
+               :source="'disciplina'"
                model="disciplina_id"
                reference="disciplinas"
              ></va-select-input>
             <va-select-input
               label="Docente"
-               :source="'nome_completo'"
+               :source="'docente'"
                model="docente_id"
                reference="docentes"
              ></va-select-input>
            
             <va-select-input
               label="Curso"
-               :source="'nome_curso'"
+               :source="'curso'"
                model="curso_id"
                reference="cursos"
              ></va-select-input>
               <va-select-input
               label="Turma"
-               :source="'nome_turma'"
+               :source="'turma'"
                model="turma_id"
                reference="turmas"
              ></va-select-input>

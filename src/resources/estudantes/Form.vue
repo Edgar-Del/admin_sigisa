@@ -28,7 +28,7 @@
                <va-text-input source="naturalidade"></va-text-input>
              </v-col>
              <v-col sm="4">
- <va-text-input source="sexo"></va-text-input>
+<va-select-input source="sexo" chip :choices="choices"></va-select-input>
              </v-col>
              <v-col sm="4">
  <va-select-input
@@ -98,8 +98,8 @@ export default {
   data() {
     return {
       choices: [
-        { value: 'M', text: 'Masculino' },
-        { value: 'F', text: 'Feminino' }
+        { value: 'Masculino', text: 'Masculino' },
+        { value: 'Feminino', text: 'Feminino' }
       ]
     }
   }

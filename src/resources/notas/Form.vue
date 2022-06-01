@@ -5,16 +5,15 @@
          <v-card-text>
            <va-select-input
               label="DISCIPLINA"
-               :source="'disciplina.nome_disciplina'"
+               :source="'atribuicao.disciplina'"
                model="atribuicao_id"
                reference="atribuicoes"
              ></va-select-input>
            <va-select-input
                label="ESTUDANTE"
-               :source="'matricula.estudante.nome_completo'"
+               :source="'confirmacao'"
                model="confirmacao_id"
                reference="confirmacao_matriculas"
-             
              ></va-select-input>
               <va-text-input label="PP1" source="primeira_parcelar"></va-text-input>
               <va-text-input label="PP2" source="segunda_parcelar"></va-text-input>

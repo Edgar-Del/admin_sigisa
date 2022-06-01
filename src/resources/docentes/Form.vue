@@ -31,11 +31,12 @@
                model="grau_academico_id"
                reference="grau_academicos"
              ></va-select-input>
+            
              </v-col>
              </v-row>
              <v-row>
                <v-col sm="4">
-              <va-text-input source="sexo"></va-text-input>
+               <va-select-input source="sexo" chip :choices="choices"></va-select-input>
               </v-col>
               <v-col sm="4">
               <va-select-input
@@ -60,5 +61,13 @@
 <script>
 export default {
   props: ["id", "title", "item"],
+   data() {
+    return {
+      choices: [
+        { value: 'Masculino', text: 'Masculino' },
+        { value: 'Feminino', text: 'Feminino' }
+      ]
+    }
+  }
 };
 </script>

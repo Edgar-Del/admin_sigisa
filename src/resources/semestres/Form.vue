@@ -6,7 +6,7 @@
             <va-text-input label="SEMESTRE" source="semestre"></va-text-input>
             <va-date-input label="INÍCIO" source="data_inicio" format="short"></va-date-input>
             <va-date-input label="FIM" source="data_fim" format="short"></va-date-input>
-            <va-text-input label="ESTADO" source="estado"></va-text-input>
+            <va-select-input source="estado" chip :choices="choices"></va-select-input>
            <va-select-input
                :source="'ano_letivo'"
                model="ano_letivo_id"
@@ -22,5 +22,13 @@
 <script>
 export default {
   props: ["id", "title", "item"],
+  data() {
+    return {
+      choices: [
+        { value: 'Ativo', text: 'Ativo' },
+        { value: 'Inativo', text: 'Inativo' }
+      ]
+    }
+  }
 };
 </script>

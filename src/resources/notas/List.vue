@@ -5,7 +5,7 @@
       <notas-form v-else :id="id" :item="item" @saved="onSaved"></notas-form>
     </va-aside-layout>
     <base-material-card :icon="resource.icon" :title="title">
-      <va-list ref="list" disable-create-redirect @action="onAction">
+      <va-list :filters="filters" ref="list" disable-create-redirect @action="onAction">
         <va-data-table
           :fields="fields"
           disable-create-redirect
@@ -34,10 +34,6 @@ export default {
           source: "confirmacao.ano_academico.ano_academico",
         },
         {
-          label: "ANO ACADÉMICO",
-          source: "confirmacao.ano_academico.ano_academico",
-        },
-        {
           label: "TURMA",
           source: "atribuicao.turma.nome_turma",
         },
@@ -55,8 +51,7 @@ export default {
         },
         ],
       fields: [
-        {label:'ESTUDANTE',source:'estudante.nome_completo',sortable:true},
-       // {label:'DISCIPLINA',source:'disciplina.nome_disciplina',sortable:true},
+        {label:'ESTUDANTE',source:'confirmacao.matricula.estudante.nome_completo',sortable:true},
         {label:'PP1',source:'primeira_parcelar'},
         {label:'PP2',source:'segunda_parcelar'},
         {label:'EXAME',source:'exame'},

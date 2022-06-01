@@ -4,10 +4,10 @@
       
           <v-card-text>
             <va-text-input label="Disciplina" source="nome_disciplina"></va-text-input>
-            <va-text-input label="Tipo de Disciplina" source="tipo_disciplina"></va-text-input>
+             <va-select-input label="Tipo de Disciplina" source="tipo_disciplina" chip :choices="choices"></va-select-input>
             <va-text-input label="Carga Horária" source="carga_horaria"></va-text-input>
             <va-select-input
-               :source="'nome_curso'"
+               :source="'curso'"
                model="curso_id"
                reference="cursos"
              ></va-select-input>
@@ -33,5 +33,13 @@
 <script>
 export default {
   props: ["id", "title", "item"],
+   data() {
+    return {
+      choices: [
+        { value: 'Nuclear', text: 'Nuclear' },
+        { value: 'Complementar', text: 'Complemetar' }
+      ]
+    }
+  }
 };
 </script>

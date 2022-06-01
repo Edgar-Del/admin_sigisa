@@ -52,7 +52,7 @@ export default [
     icon: 'mdi-account-box-multiple',
     label: 'disciplina.nome_disciplina'
   },
-  { name: 'confirmacao_matriculas', label: 'nome_completo' },
+  { name: 'confirmacao_matriculas', label: 'matricula.estudante.nome_completo' },
   { name: 'provas', label: 'prova' },
   { name: 'notas' },
   { name: 'grade' },

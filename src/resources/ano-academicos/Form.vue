@@ -7,7 +7,7 @@
             <va-text-input source="ano_academico"></va-text-input>
          <!--   <va-text-input source="curso"></va-text-input> -->
        <va-select-input
-               :source="'nome_curso'"
+               :source="'curso'"
                model="curso_id"
                reference="cursos"
              ></va-select-input>
