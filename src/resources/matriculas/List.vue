@@ -14,11 +14,16 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
-      filters: [],
+      filters: [
+        {label:'ESTUDANTE',source:'estudante.nome_completo',sortable:true},
+        {label:'CURSO',source:'curso.nome_curso',sortable:true},
+        {label:'PERIODO',source:'periodo.nome_periodo'},
+        {label:'DATA DE MATRICULA',source:'data_matricula',sortable:true},
+      ],
       fields: [
-        {label:'ESTUDANTE',source:'estudante',sortable:true},
-        {label:'CURSO',source:'curso',sortable:true},
-        {label:'PERIODO',source:'periodo'},
+        {label:'ESTUDANTE',source:'estudante.nome_completo',sortable:true},
+        {label:'CURSO',source:'curso.nome_curso',sortable:true},
+        {label:'PERIODO',source:'periodo.nome_periodo'},
         {label:'DATA DE MATRICULA',source:'data_matricula',sortable:true},
       ],
     };

@@ -1,27 +1,20 @@
 <template>
   <va-form :id="id" :item="item">
     <v-row justify="center">
-      <v-col sm="6">
-        <base-material-card>
-          <template v-slot:heading>
-            <div class="display-2">
-              {{ title }}
-            </div>
-          </template>
+    
           <v-card-text>
-            <va-text-input source="semestre"></va-text-input>
-            <va-date-input source="data_inicio" format="short"></va-date-input>
-            <va-date-input source="data_fim" format="short"></va-date-input>
-            <va-select-input
+            <va-text-input label="SEMESTRE" source="semestre"></va-text-input>
+            <va-date-input label="INÍCIO" source="data_inicio" format="short"></va-date-input>
+            <va-date-input label="FIM" source="data_fim" format="short"></va-date-input>
+            <va-text-input label="ESTADO" source="estado"></va-text-input>
+           <va-select-input
                :source="'ano_letivo'"
-               model="ano_letivo"
+               model="ano_letivo_id"
                reference="ano_letivos"
                :filter="{ active: true }"
              ></va-select-input>
           </v-card-text>
           <va-save-button></va-save-button>
-        </base-material-card>
-      </v-col>
     </v-row>
   </va-form>
 </template>

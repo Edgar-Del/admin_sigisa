@@ -1,25 +1,30 @@
 <template>
-  <va-show-layout>
     <va-show :item="item">
       <v-row justify="center">
-        <v-col sm="6">
+        <v-col sm="12">
           <base-material-card>
-            <template v-slot:heading>
-              <div class="display-2">
-                {{ title }}
-              </div>
-            </template>
             <v-card-text>
-               <va-field source="semestre"></va-field>
-               <va-field source="data_inicio"></va-field>
-               <va-field source="data_fim"></va-field>
-               <va-field source="ano_letivo"></va-field>
+              <v-row>
+                <v-col sm="6">
+                  <va-field label="SEMESTRE" source="semestre"></va-field>
+                </v-col>
+                <v-col sm="6">
+                   <va-field  label="ANO" source="ano_letivo.ano_letivo"></va-field>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col sm="6">
+                   <va-field label="DATA DE INÍCIO" source="data_inicio"></va-field>
+                </v-col>
+                <v-col sm="6">
+         <va-field label="DATA DE FIM" source="data_fim"></va-field>
+                </v-col>
+              </v-row>
             </v-card-text>
           </base-material-card>
         </v-col>
       </v-row>
     </va-show>
-  </va-show-layout>
 </template>
 
 <script>

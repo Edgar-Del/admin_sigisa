@@ -14,7 +14,12 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
-      filters: [],
+      filters: [
+        {label:'NOME',source:'nome_completo',sortable:true},
+        {label:'NÚM IDENTIFICAÇÃO',source:'num_identificacao',sortable:true},
+        {label:'MORADA',source:'morada',sortable:true},
+        {label:'GRAU ACADÉMICO',source:'grau_academico.grau_academico',sortable:true},
+      ],
       fields: [
         {label:'NOME COMPLETO',source:'nome_completo',sortable:true},
         {label:'NÚM IDENTIFICAÇÃO',source:'num_identificacao',sortable:true},

@@ -29,14 +29,14 @@
            <v-col sm="6">
          <va-select-input
                :source="'ano_academico'"
-               model="ano_academico"
+               model="ano_academico_id"
                reference="ano_academicos"
              ></va-select-input>
               </v-col>
             <v-col sm="6">
            <va-select-input
                :source="'turma'"
-               model="turma"
+               model="turma_id"
                reference="turmas"
              ></va-select-input>
              </v-col>

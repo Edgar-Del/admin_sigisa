@@ -24,9 +24,39 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
+      filters: [
+        {
+          label: "CURSO",
+          source: "confirmacao.matricula.curso.nome_curso",
+        },
+        {
+          label: "ANO ACADÉMICO",
+          source: "confirmacao.ano_academico.ano_academico",
+        },
+        {
+          label: "ANO ACADÉMICO",
+          source: "confirmacao.ano_academico.ano_academico",
+        },
+        {
+          label: "TURMA",
+          source: "atribuicao.turma.nome_turma",
+        },
+        {
+          label: "DISCIPLINA",
+          source: "atribuicao.disciplina.nome_disciplina",
+        },
+        {
+          label: "DOCENTE",
+          source: "atribuicao.docente.nome_completo",
+        },
+        {
+          label: "ESTUDANTE",
+          source: "confirmacao.matricula.estudante.nome_completo",
+        },
+        ],
       fields: [
         {label:'ESTUDANTE',source:'estudante.nome_completo',sortable:true},
-        {label:'DISCIPLINA',source:'disciplina.nome_disciplina',sortable:true},
+       // {label:'DISCIPLINA',source:'disciplina.nome_disciplina',sortable:true},
         {label:'PP1',source:'primeira_parcelar'},
         {label:'PP2',source:'segunda_parcelar'},
         {label:'EXAME',source:'exame'},

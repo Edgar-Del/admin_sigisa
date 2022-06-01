@@ -15,14 +15,7 @@ export default {
   data() {
     return {
       filters: [],
-      fields: [
-        {source:'nome_completo', sortable:true},
-        {source:'num_identificacao', sortable:true},
-        {source:'morada', sortable:true},
-        {source:'telefone', sortable:true},
-        {source:'escola_proveniencia'},
-        {source:'curso_proveniencia', sortable:true},
-      ],
+      fields: [],
     };
   },
 };

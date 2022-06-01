@@ -1,17 +1,22 @@
 <template>
-
-  
-  <base-material-card :icon="resource.icon" :title="title">
-    <va-list
-      :filters="filters"
-    >
-      <va-data-table 
-      :fields="fields"
-      row-create
-      row-edit>
-      </va-data-table>
-    </va-list>
-  </base-material-card>
+  <div>
+    <va-aside-layout :title="asideTitle">
+      <semestres-show v-if="show" :item="item"></semestres-show>
+      <semestres-form v-else :id="id" :item="item" @saved="onSaved"></semestres-form>
+    </va-aside-layout>
+    <base-material-card :icon="resource.icon" :title="title">
+      <va-list :filters="filters" ref="list" disable-create-redirect @action="onAction">
+        <va-data-table
+          :fields="fields"
+          disable-create-redirect
+          disable-show-redirect
+          disable-edit-redirect
+          @item-action="onAction"
+        >
+        </va-data-table>
+      </va-list>
+    </base-material-card>
+  </div>
 </template>
 
 <script>
@@ -19,13 +24,36 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
-      filters: [],
-     fields: [{source:'semestre',sortable:true},
-      {source:'data_inicio',sortable:true},
-      {source:'data_fim',sortable:true},
-      {source:'ano_letivo'},
+
+filters: [
+      {label:'SEMESTRE',source:'semestre',sortable:true},
+      {label:'DATA DE INÍCIO',source:'data_inicio',sortable:true},
+      {label:'DATA DE FIM' ,source:'data_fim',sortable:true},
+      {label:'ANO LETIVO',source:'ano_letivo.ano_letivo'},
       ],
+fields: [
+      {label:'SEMESTRE',source:'semestre',sortable:true},
+      {label:'DATA DE INÍCIO',source:'data_inicio',sortable:true},
+      {label:'DATA DE FIM' ,source:'data_fim',sortable:true},
+      {label:'ANO LETIVO',source:'ano_letivo.ano_letivo'},
+      ],
+      asideTitle: null,
+      id: null,
+      item: null,
+      show: false,
     };
+  },
+  methods: {
+    async onAction({ action, title, id, item }) {
+      this.asideTitle = title;
+      this.id = id;
+      this.show = action === "show";
+      this.item = item;
+    },
+    onSaved() {
+      this.asideTitle = null;
+      this.$refs.list.fetchData();
+    },
   },
 };
 </script>

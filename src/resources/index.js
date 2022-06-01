@@ -18,13 +18,8 @@ export default [
     icon: 'mdi-bookmark-box-multiple',
     label: 'ano_academico'
   },
-  {
-    name: 'semestres',
-    icon: 'mdi-av-timer',
-    label: 'semestre',
-    actions: [ 'edit', 'list', 'delete' ]
-  },
-  { name: 'turmas', icon: 'mdi-google-classroom', label: 'turma' },
+  { name: 'semestres', icon: 'mdi-av-timer', label: 'semestre' },
+  { name: 'turmas', icon: 'mdi-google-classroom', label: 'nome_turma' },
   {
     name: 'disciplinas',
     icon: 'mdi-book-open-page-variant-outline',
@@ -52,8 +47,14 @@ export default [
     icon: 'mdi-account-box-multiple',
     label: 'estudante'
   },
-  { name: 'atribuicoes', icon: 'mdi-account-box-multiple', label:'disciplina.nome_disciplina' },
-  { name: 'confirmacao_matriculas',label: 'estudante.nome_completo' },
+  {
+    name: 'atribuicoes',
+    icon: 'mdi-account-box-multiple',
+    label: 'disciplina.nome_disciplina'
+  },
+  { name: 'confirmacao_matriculas', label: 'nome_completo' },
   { name: 'provas', label: 'prova' },
-  { name: 'notas' }
+  { name: 'notas' },
+  { name: 'grade' },
+  { name: 'avaliacao' }
 ]

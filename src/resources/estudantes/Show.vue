@@ -11,23 +11,63 @@
             </template>
             <v-card-text>
               <v-row>
-              <va-field source="nome_completo"></va-field>
+                <v-col sm="4">
+                   <va-field source="nome_completo"></va-field>
+                </v-col>
+                <v-col sm="4">
+ 
              <va-field source="num_identificacao"></va-field>
-             <va-field source="morada"></va-field>
+                </v-col>
+                <v-col sm="4">
+ <va-field source="morada"></va-field>
+                </v-col>
              </v-row>
-             <va-field source="escola_proveniencia"></va-field>
-             <va-field source="curso_proveniencia"></va-field>
-             
-             <va-field source="naturalidade"></va-field>
-             <va-field source="telefone"></va-field>
-             <va-field source="email"></va-field>
+             <v-row>
+              <v-col sm="4">
+                   <va-field source="escola_proveniencia"></va-field>
+                </v-col>
+                <v-col sm="4">
+ <va-field source="curso_proveniencia"></va-field>
+                </v-col>
+                <v-col sm="4">
+<va-field source="naturalidade"></va-field>
+                </v-col>
+             </v-row>
+             <v-row>
+                <v-col sm="4">
+                  <va-field source="telefone"></va-field>
+                </v-col>
+                <v-col sm="4">
+<va-field source="email"></va-field>
+                </v-col>
+                <v-col sm="4">
              <va-field source="sexo"></va-field>
-             <va-field source="estado_civil"></va-field>
-             <va-field source="situacao_laboral"></va-field>
-             <va-field source="instituicao_laboral"></va-field>
-             <va-field source="nome_pai"></va-field>
-             <va-field source="nome_mae"></va-field>
-             <va-field source="user_id"></va-field>
+                </v-col>
+             </v-row>
+             <v-row>
+                <v-col sm="4">
+                  <va-field source="estado_civil.estado_civil"></va-field>
+                </v-col>
+                <v-col sm="4">
+                  <va-field source="situacao_laboral.situacao_laboral"></va-field>
+
+                </v-col>
+                <v-col sm="4">
+                  <va-field source="instituicao_laboral"></va-field>
+
+                </v-col>
+             </v-row>
+             <v-row>
+                <v-col sm="4">
+                  <va-field source="nome_pai"></va-field>
+                </v-col>
+                <v-col sm="4">
+  <va-field source="nome_mae"></va-field>
+                </v-col>
+                <v-col sm="4">
+  <va-field source="user_id.name"></va-field>
+                </v-col>
+             </v-row>
             </v-card-text>
           </base-material-card>
         </v-col>

@@ -1,25 +1,35 @@
 <template>
-  <va-show-layout>
     <va-show :item="item">
       <v-row justify="center">
-        <v-col sm="6">
-          <base-material-card>
+      <v-col sm="12">
+         <base-material-card>
             <template v-slot:heading>
               <div class="display-2">
                 {{ title }}
               </div>
             </template>
             <v-card-text>
-            <va-field source="nome_turma"></va-field>
-            <va-field source="semestre.semestre"></va-field>
-            <va-field source="ano_academico.ano_academico"></va-field>
-            <va-field source="periodo.nome_periodo"></va-field>
+            <v-row>
+              <v-col sm="6">
+            <va-field label="TURMA" source="nome_turma"></va-field>
+            </v-col>
+            <v-col sm="6">
+            <va-field label="SEMESTRE" source="semestre.semestre"></va-field>
+            </v-col>
+            </v-row>
+            <v-row>
+               <v-col sm="6">
+            <va-field label="ANO ACADÉMICO" source="ano_academico.ano_academico"></va-field>
+           </v-col>
+            <v-col sm="6">
+            <va-field label="PERIODO" source="periodo.nome_periodo"></va-field>
+           </v-col>
+           </v-row>
             </v-card-text>
-          </base-material-card>
-        </v-col>
+            </base-material-card>
+            </v-col>
       </v-row>
     </va-show>
-  </va-show-layout>
 </template>
 
 <script>

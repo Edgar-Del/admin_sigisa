@@ -14,14 +14,27 @@ export default {
   props: ["resource", "title"],
   data() {
     return {
-      filters: [],
+      filters: [
+        {
+          label: "CURSO",
+          source: "matricula.curso.nome_curso",
+        },
+        {
+          label: "ANO ACADÉMICO",
+          source: "ano_academico.ano_academico",
+        },
+        {
+          label: "TURMA",
+          source: "turma",
+        },
+        ],
       fields: [
-        {source:'matricula.estudante',sortable:true},
-        {source:'matricula.curso',sortable:true},
-        {source:'matricula.periodo',sortable:true},
-        {source:'semestre',},
-        {source:'ano_academico',sortable:true},
-        {source:'turma',sortable:true},
+        {label:'NOME',source:'matricula.estudante.nome_completo',sortable:true},
+        {label:'CURSO',source:'matricula.curso.nome_curso',sortable:true},
+        {label:'PERIODO',source:'matricula.periodo.nome_periodo',sortable:true},
+        {label:'SEMESTRE',source:'semestre.semestre',},
+        {label:'ANO',source:'ano_academico.ano_academico',sortable:true},
+        {label:'TURMA',source:'turma.nome_turma',sortable:true},
       ],
     };
   },

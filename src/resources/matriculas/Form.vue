@@ -38,7 +38,7 @@
             <v-col sm="6">
            <va-select-input
                :source="'nome_periodo'"
-               model="periodo"
+               model="periodo_id"
               reference="periodo"
                :filter="{ active: true }"
              ></va-select-input>

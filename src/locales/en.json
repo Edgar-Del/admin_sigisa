@@ -140,6 +140,10 @@
     "atribuicoes": {
       "fields": {},
       "enums": {}
+    },
+    "avaliacao": {
+      "fields": {},
+      "enums": {}
     }
   }
 }

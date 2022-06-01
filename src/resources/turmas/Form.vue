@@ -1,8 +1,8 @@
 <template>
   <va-form :id="id" :item="item">
     <v-row justify="center">
-      <v-col sm="6">
-        <base-material-card>
+     <!--<v-col sm="6"> -->
+       <!-- <base-material-card>--> 
           <template v-slot:heading>
             <div class="display-2">
               {{ title }}
@@ -14,25 +14,30 @@
                :source="'semestre'"
                model="semestre_id"
                reference="semestres"
-               :filter="{ active: true }"
+               
+             ></va-select-input>
+             <va-select-input
+               :source="'nome_curso'"
+               reference="cursos"
              ></va-select-input>
              <va-select-input
                :source="'ano_academico'"
                model="ano_academico_id"
                reference="ano_academicos"
-               :filter="{ active: true }"
+              
              ></va-select-input>
+             
              <va-select-input
                :source="'periodo'"
                model="periodo_id"
                reference="periodo"
-               :filter="{ active: true }"
+              
              ></va-select-input>
              
          </v-card-text>
           <va-save-button></va-save-button>
-        </base-material-card>
-      </v-col>
+       <!--   </base-material-card>-->
+     <!-- </v-col>-->
     </v-row>
   </va-form>
 </template>

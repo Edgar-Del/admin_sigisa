@@ -1,23 +1,23 @@
 <template>
-  <va-show-layout>
+ 
     <va-show :item="item">
       <v-row justify="center">
-        <v-col sm="6">
-          <base-material-card>
-            <template v-slot:heading>
-              <div class="display-2">
-                {{ title }}
-              </div>
-            </template>
+        <v-col sm="12">
+        <base-material-card>
              <v-card-text>
-             <va-field source="ano_letivo"></va-field>
+               <v-row>
+                 <v-col sm="6">
+              <va-field source="ano_letivo"></va-field>
+              </v-col>
+               <v-col sm="6">
               <va-field source="estado"></va-field>
+              </v-col>
+              </v-row>
             </v-card-text>
-          </base-material-card>
-        </v-col>
+            </base-material-card>
+            </v-col>
       </v-row>
     </va-show>
-  </va-show-layout>
 </template>
 
 <script>
