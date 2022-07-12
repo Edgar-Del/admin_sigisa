@@ -1,6 +1,7 @@
 <template>
   <va-layout>
     <va-app-bar
+    color="#34495e"
       slot="app-bar"
       :header-menu="headerMenu"
       :profile-menu="profileMenu"
@@ -10,12 +11,22 @@
         $vuetify.breakpoint.lgAndUp ? (mini = !mini) : (drawer = !drawer)
       "
     ></va-app-bar>
+
     <va-sidebar
       slot="sidebar"
       :menu="sidebarMenu"
       v-model="drawer"
       :mini-variant="mini"
-    ></va-sidebar>
+      dark
+    >
+      <template v-slot:img="props" background-color="#34495e">
+        <v-img
+          src="../assets/splash.jpg"
+          gradient="to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)"
+          v-bind="props"
+        />
+      </template>
+     </va-sidebar>
     <va-breadcrumbs slot="header"></va-breadcrumbs>
     <va-aside slot="aside"></va-aside>
     <va-footer slot="footer" :menu="footerMenu">

@@ -16,10 +16,12 @@
                reference="semestres"
                
              ></va-select-input>
+             <!--
              <va-select-input
                :source="'nome_curso'"
                reference="cursos"
              ></va-select-input>
+             -->
              <va-select-input
                :source="'ano_academico'"
                model="ano_academico_id"

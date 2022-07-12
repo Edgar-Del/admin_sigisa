@@ -45,16 +45,21 @@ export default [
   {
     name: 'matriculas',
     icon: 'mdi-account-box-multiple',
-    label: 'estudante'
+    label: 'estudante.nome_completo'
   },
   {
     name: 'atribuicoes',
     icon: 'mdi-account-box-multiple',
     label: 'disciplina.nome_disciplina'
   },
-  { name: 'confirmacao_matriculas', label: 'matricula.estudante.nome_completo' },
+  { name: 'confirmacao_matriculas',
+  icon:'mdi-book-check-outline',
+  label: 'matricula.estudante.nome_completo' },
   { name: 'provas', label: 'prova' },
-  { name: 'notas' },
+  { 
+    name: 'notas',
+    icon: 'mdi-book-education-outline'
+  },
   { name: 'grade' },
   { name: 'avaliacao' }
 ]

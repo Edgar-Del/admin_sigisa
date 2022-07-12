@@ -12,7 +12,8 @@
             <v-row>
            <v-col sm="6">
         <va-select-input
-               :source="'estudante'"
+              label="Estudante"
+               :source="'estudante.nome_completo'"
                model="matricula_id"
                reference="matriculas"
              ></va-select-input>

@@ -69,7 +69,7 @@ export default {
     },
     color: {
       type: String,
-      default: "success",
+      default: "#34495e",
     },
     icon: {
       type: String,

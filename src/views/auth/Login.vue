@@ -55,7 +55,6 @@ export default {
     async validate() {
       if (this.$refs.form.validate()) {
         this.loading = true;
-
         try {
           await this.login(this.form);
         } catch (e) {
@@ -63,7 +62,6 @@ export default {
             this.errorMessages = e.errors;
             return;
           }
-
           this.errorMessages = { email: [e.message] };
         } finally {
           this.loading = false;

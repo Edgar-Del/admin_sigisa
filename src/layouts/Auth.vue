@@ -11,7 +11,7 @@
             </template>
             <v-card-text>
               <div class="text-center mb-4">
-                <img src="../assets/logo.svg" width="80" height="80" />
+                <img src="../assets/logo-ispb.png" width="80" height="80" />
               </div>
 
               <transition name="fade" mode="out-in">

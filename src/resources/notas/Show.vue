@@ -10,8 +10,8 @@
               </div>
             </template>
             <v-card-text>
-              <va-field label="NOME" source="atribuicao.disciplina.nome_disciplina"></va-field>
-              <va-field label="NOME" source="matricula"></va-field>
+              <va-field label="DISCIPLINA" source="atribuicao.disciplina.nome_disciplina"></va-field>
+              <va-field label="NOME COMPLETO" source="confirmacao_matriculas"></va-field>
             </v-card-text>
           </base-material-card>
         </v-col>

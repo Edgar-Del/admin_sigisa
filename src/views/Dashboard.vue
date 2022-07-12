@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-col cols="12" lg="4">
+     <!-- <v-col cols="12" lg="4">
         <base-material-chart-card
           :data="emailsSubscriptionChart.data"
           :options="emailsSubscriptionChart.options"
@@ -11,7 +11,7 @@
           type="Bar"
         >
           <template v-slot:reveal-actions>
-            <v-tooltip bottom>
+         <v-tooltip bottom>
               <template v-slot:activator="{ attrs, on }">
                 <v-btn v-bind="attrs" color="info" icon v-on="on">
                   <v-icon color="info"> mdi-refresh </v-icon>
@@ -32,7 +32,7 @@
             </v-tooltip>
           </template>
 
-          <h4 class="card-title font-weight-light mt-2 ml-2">Website Views</h4>
+          <h4 class="card-title font-weight-light mt-2 ml-2">Disciplinas</h4>
 
           <p class="d-inline-flex font-weight-light ml-2 mt-1">
             Last Campaign Performance
@@ -139,59 +139,55 @@
           </template>
         </base-material-chart-card>
       </v-col>
-
+-->
       <v-col cols="12" sm="6" lg="3">
         <base-material-stats-card
           color="info"
-          icon="mdi-twitter"
-          title="Followers"
+          icon="mdi-account-school"
+          title="Estudantes"
           value="+245"
-          sub-icon="mdi-clock"
-          sub-text="Just Updated"
+          sub-text="Atualizando..."
         />
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
         <base-material-stats-card
           color="primary"
-          icon="mdi-poll"
-          title="Website Visits"
-          value="75.521"
+          icon="mdi-bookshelf"
+          title="Cursos"
+          value="6"
           sub-icon="mdi-tag"
-          sub-text="Tracked from Google Analytics"
+          sub-text="Ano Letivo 2021/2022"
         />
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
         <base-material-stats-card
           color="success"
-          icon="mdi-store"
-          title="Revenue"
-          value="$ 34,245"
-          sub-icon="mdi-calendar"
-          sub-text="Last 24 Hours"
+          icon="mdi-account-details"
+          title="Docentes"
+          value="+34"
+          sub-text="Docentes por curso"
         />
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
         <base-material-stats-card
           color="orange"
-          icon="mdi-sofa"
-          title="Bookings"
-          value="184"
-          sub-icon="mdi-alert"
-          sub-icon-color="red"
-          sub-text="Get More Space..."
+          icon="mdi-book-open-page-variant-outline"
+          title="Disciplinas"
+          value="84"
+          sub-text="Disciplinas disponíveis..."
         />
       </v-col>
 
       <v-col cols="12" md="6">
         <base-material-card color="warning" class="px-5 py-3">
           <template v-slot:heading>
-            <div class="display-2 font-weight-light">Employees Stats</div>
+            <div class="display-2 font-weight-light">Solicitações</div>
 
             <div class="subtitle-1 font-weight-light">
-              New employees on 15th September, 2016
+              Novas solicitações (10/Jun/2022)
             </div>
           </template>
           <v-card-text>
@@ -211,19 +207,19 @@
               <span
                 class="subheading font-weight-light mx-3"
                 style="align-self: center"
-                >Tasks:</span
+                >Tarefas:</span
               >
               <v-tab class="mr-3">
-                <v-icon class="mr-2"> mdi-bug </v-icon>
-                Bugs
+                <v-icon class="mr-2"> mdi-application-cog-outline </v-icon>
+                TI
               </v-tab>
               <v-tab class="mr-3">
-                <v-icon class="mr-2"> mdi-code-tags </v-icon>
-                Website
+                <v-icon class="mr-2"> mdi-badge-account-horizontal-outline </v-icon>
+                Secretaria
               </v-tab>
               <v-tab>
-                <v-icon class="mr-2"> mdi-cloud </v-icon>
-                Server
+                <v-icon class="mr-2"> mdi-briefcase-account-outline </v-icon>
+                Exterior
               </v-tab>
             </v-tabs>
           </template>
@@ -264,7 +260,7 @@ export default {
     return {
       dailySalesChart: {
         data: {
-          labels: ["M", "T", "W", "T", "F", "S", "S"],
+          labels: ["S", "T", "Q", "Q", "S", "S", "D"],
           series: [[12, 17, 7, 17, 23, 18, 38]],
         },
         options: {
@@ -303,18 +299,18 @@ export default {
       emailsSubscriptionChart: {
         data: {
           labels: [
-            "Ja",
-            "Fe",
-            "Ma",
-            "Ap",
+            "Jan",
+            "Fev",
             "Mai",
-            "Ju",
+            "Abr",
+            "Mai",
+            "Jun",
             "Jul",
-            "Au",
-            "Se",
-            "Oc",
-            "No",
-            "De",
+            "Ago",
+            "Set",
+            "Out",
+            "Nov",
+            "Dez",
           ],
           series: [
             [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
@@ -355,106 +351,79 @@ export default {
         },
         {
           sortable: false,
-          text: "Name",
-          value: "name",
+          text: "Nome",
+          value: "nome",
         },
         {
           sortable: false,
-          text: "Salary",
-          value: "salary",
+          text: "Documento",
+          value: "documento",
           align: "right",
         },
         {
           sortable: false,
-          text: "Country",
-          value: "country",
-          align: "right",
-        },
-        {
-          sortable: false,
-          text: "City",
-          value: "city",
+          text: "Curso",
+          value: "curso",
           align: "right",
         },
       ],
       items: [
+
         {
           id: 1,
-          name: "Dakota Rice",
-          country: "Niger",
-          city: "Oud-Tunrhout",
-          salary: "$35,738",
+          nome: "Minerva Hooper",
+          curso: "Engenharia Informática",
+          documento: "Declaração",
         },
         {
           id: 2,
-          name: "Minerva Hooper",
-          country: "Curaçao",
-          city: "Sinaai-Waas",
-          salary: "$23,738",
+          nome: "Sage Rodriguez",
+          curso: "Comunicação Social",
+          documento: "Certificado",
         },
         {
           id: 3,
-          name: "Sage Rodriguez",
-          country: "Netherlands",
-          city: "Overland Park",
-          salary: "$56,142",
+          nome: "Filipe Calei",
+          curso: "Engenharia de Recursos Hídricos",
+          documento: "Certificado",
         },
         {
           id: 4,
-          name: "Philip Chanley",
-          country: "Korea, South",
-          city: "Gloucester",
-          salary: "$38,735",
-        },
-        {
-          id: 5,
-          name: "Doris Greene",
-          country: "Malawi",
-          city: "Feldkirchen in Kārnten",
-          salary: "$63,542",
+          nome: "Doriana Graça",
+          curso: "Engenharia Informática",
+          documento: "Declaração",
         },
       ],
       tabs: 0,
       tasks: {
         0: [
           {
-            text: 'Sign contract for "What are conference organizers afraid of?"',
+            text: 'Reunir com a Equipa de TI"',
             value: true,
           },
           {
-            text: "Lines From Great Russian Literature? Or E-mails From My Boss?",
+            text: "Enviar emails ao Estudantes finalistas",
             value: false,
-          },
-          {
-            text: "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
-            value: false,
-          },
-          {
-            text: "Create 4 Invisible User Experiences you Never Knew About",
-            value: true,
           },
         ],
         1: [
           {
-            text: "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
+            text: "Analisar as Solicitações de Documentos",
             value: true,
           },
           {
-            text: 'Sign contract for "What are conference organizers afraid of?"',
+            text: 'Atualizar a equipa de TI sobre o Backup"',
             value: false,
           },
         ],
         2: [
+          
           {
-            text: "Lines From Great Russian Literature? Or E-mails From My Boss?",
-            value: false,
-          },
-          {
-            text: "Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit",
+            text: "Encaminhar o Dossier para a outorga",
             value: true,
           },
           {
-            text: 'Sign contract for "What are conference organizers afraid of?"',
+            text: 'Assinar o Acordo de Parceria com o Hospital Dr. Walter Strangway"',
             value: true,
           },
         ],

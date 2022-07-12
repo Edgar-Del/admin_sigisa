@@ -12,12 +12,9 @@
            <v-row>
              <v-col sm="4">
                <va-text-input source="nome_completo"></va-text-input>
-            
              </v-col>
              <v-col sm="4">
                <va-text-input source="num_identificacao"></va-text-input>
-           
-
              </v-col>
              <v-col sm="4">
       <va-date-input source="data_nascimento"></va-date-input>
@@ -40,7 +37,6 @@
              </v-col>
            </v-row>
            <v-row>
-             
              <v-col sm="4">
                  <va-text-input source="morada"></va-text-input>
              </v-col>
@@ -50,7 +46,6 @@
              </v-col>
              <v-col sm="4">
                <va-text-input source="email"></va-text-input>
-
              </v-col>
            </v-row>
            <v-row>
@@ -75,15 +70,11 @@
              </v-col>
              <v-col sm="4">
                <va-text-input source="escola_proveniencia"></va-text-input>
-
              </v-col>
              <v-col sm="4">
                <va-text-input source="curso_proveniencia"></va-text-input>
-
              </v-col>
            </v-row>
-            
-            
           </v-card-text>
           <va-save-button></va-save-button>
         </base-material-card>
@@ -103,6 +94,5 @@ export default {
       ]
     }
   }
-
 };
 </script>

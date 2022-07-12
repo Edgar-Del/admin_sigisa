@@ -24,7 +24,7 @@ export default (i18n, admin) => [
  // admin.getResourceLink("unidade"),
  // admin.getResourceLink("situacao_laboral"),
  admin.getResourceLink("estudantes"),
- //admin.getResourceLink("matriculas"),
+ admin.getResourceLink("matriculas"),
 admin.getResourceLink("confirmacao_matriculas"),
  //admin.getResourceLink("provas"),
  admin.getResourceLink("notas"),
